@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+.logo{
+    width: 17%;
+}
+.show-menu img{
+    max-height: 20px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	
+}
+li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: black;
+	background: white;
+	text-decoration: none;
+  transition:all 0.5s ease;
+}
+li:hover a {
+	background: #00a0dd;
+}
+li:hover ul a {
+	background: #f3f3f3;
+	color: white;
+	height: 40px;
+	line-height: 40px;
+}
+li:hover ul a:hover {
+	background: #00a0dd;
+	color: black;
+}
+li ul {
+	display: none;
+}
+li ul li {
+	display: block;
+	float: none;
+}
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: black;
+	background: #00a0dd;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+  transition:all 0.5s ease;
+}
+input[type=checkbox]{
+    display: none;
+}
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+img{
+    max-width: 100%;
+}
+h1:after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: whitesmoke;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.inicio:nth-child(1){
+    height: 80vh;
+    background-image: url(./FOTOS/271485962_2022001284626414_879410758743887852_n.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.inicio:nth-child(1)>div{
+    background-color: rgba(5, 181, 250, 0.74);
+    color: whitesmoke;
+    font-size: 1.5rem;
+    width: 50%;
+    margin: auto;
+    padding: 3%;
+    border-radius: 1em;
+}
+.inicio h1{
+    font-size: 3rem;
+}
+.inicio:nth-child(2){
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media screen and (max-width : 768px){
+	/*Hace que el dropdown links aparescan en linea */
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Crea espacio vertical */
+	li {
+		margin-bottom: 1px;
+	}
+	/* crea todo el menu links  ancho full */
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display '.muestra-menu' link*/
+	.show-menu {
+		display:block;
+	}
+    header{
+        display: block;
+        text-align: center;
+        position: sticky;
+        top:0;
+    }
+}
