@@ -84,6 +84,7 @@ input[type=checkbox]:checked ~ #menu{
 img{
     max-width: 100%;
 }
+/* inicio */
 h1:after{
     content: "";
     display: block;
@@ -95,7 +96,7 @@ h1:after{
     width: 80%;
     margin: auto;
 }
-.inicio:nth-child(1){
+#inicio{
     height: 80vh;
     background-image: url(./FOTOS/271485962_2022001284626414_879410758743887852_n.png);
     background-size: cover;
@@ -103,7 +104,7 @@ h1:after{
     justify-content: center;
     flex-direction: column;
 }
-.inicio:nth-child(1)>div{
+#ini2{
     background-color: rgba(5, 181, 250, 0.74);
     color: whitesmoke;
     font-size: 1.5rem;
@@ -112,15 +113,18 @@ h1:after{
     padding: 3%;
     border-radius: 1em;
 }
-.inicio h1{
+#inicio h1{
     font-size: 3rem;
 }
-.inicio:nth-child(2){
+#ini2{
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+/* Nosotros */
+/* Contacto */
+/* Responsive */
 @media screen and (max-width : 768px){
 	/*Hace que el dropdown links aparescan en linea */
 	ul {
